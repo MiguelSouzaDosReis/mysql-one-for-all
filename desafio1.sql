@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS SpotifyClone;
+-- DROP DATABASE IF EXISTS SpotifyClone;
 
 CREATE DATABASE SpotifyClone;
 
@@ -203,4 +203,5 @@ VALUES
   -- FIQUEI UM POUCO PERDIDO COM A MONTAGEM DE TABELA ENTÃO ME BASEI NA TABELA DO Carlos lima 
   -- https://github.com/tryber/sd-015-b-mysql-one-for-all/pull/111/commits/b75a8554bbf6b0f54c74d5651509f8852a8c7c48
   
+
   
