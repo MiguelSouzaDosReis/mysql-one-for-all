@@ -1,4 +1,4 @@
--- DROP DATABASE IF EXISTS SpotifyClone;
+DROP DATABASE IF EXISTS SpotifyClone;
 
 CREATE DATABASE SpotifyClone;
 
@@ -30,21 +30,24 @@ CREATE TABLE SpotifyClone.musicas(
     cancoes_id INT PRIMARY KEY AUTO_INCREMENT,
     cancoes VARCHAR(50) NOT NULL,
     albuns_id INT NOT NULL,
-    duracao_seguntos time NOT NULL,
-    FOREIGN KEY (album_id) REFERENCES SpotifyClone.albuns(albuns_id)
+    duracao_seguntos INT NOT NULL,
+    
+    FOREIGN KEY (albuns_id) REFERENCES SpotifyClone.albuns(albuns_id)
 ) engine = InnoDB;
 CREATE TABLE SpotifyClone.artistas_seguidos(
     usuario_id INT NOT NULL,
     artista_id INT NOT NULL,
     CONSTRAINT PRIMARY KEY (usuario_id, artista_id),
+
     FOREIGN KEY (usuario_id) REFERENCES SpotifyClone.usuarios(usuario_id),
-    FOREIGN KEY (artista_id) REFERENCES SpotifyClone.artista(artista_id)
+    FOREIGN KEY (artista_id) REFERENCES SpotifyClone.artistas(artista_id)
 ) engine = InnoDB;
 CREATE TABLE SpotifyClone.historicos(
     usuario_id INT NOT NULL,
     cancoes_id INT NOT NULL,
-    data_reproducao datetime NOT NULL,
+    data_reproducao DATETIME NOT NULL,
     CONSTRAINT PRIMARY KEY (usuario_id, cancoes_id),
+
     FOREIGN KEY (usuario_id) REFERENCES SpotifyClone.usuarios(usuario_id),
     FOREIGN KEY (cancoes_id) REFERENCES SpotifyClone.musicas(cancoes_id)
 ) engine = InnoDB;
@@ -186,7 +189,7 @@ VALUES
   (6,22 ,'2018-05-29 14:56:41'),
   (7,5 ,'2018-05-09 22:30:49'),
   (7,4 ,'2020-07-27 12:52:58'),
-  (7,11 ,'"2018-01-16 18:40:43'),
+  (7,11 ,'2018-01-16 18:40:43'),
   (8,39 ,'2018-03-21 16:56:40'),
   (8,40 ,'2020-10-18 13:38:05'),
   (8,32 ,'2019-05-25 08:14:03'),
@@ -202,6 +205,3 @@ VALUES
   
   -- FIQUEI UM POUCO PERDIDO COM A MONTAGEM DE TABELA ENTÃO ME BASEI NA TABELA DO Carlos lima 
   -- https://github.com/tryber/sd-015-b-mysql-one-for-all/pull/111/commits/b75a8554bbf6b0f54c74d5651509f8852a8c7c48
-  
-
-  
