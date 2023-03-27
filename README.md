@@ -1,6 +1,6 @@
 # Project Mysql One For All
 
-Neste projeto, pude aprofundar meus conhecimentos em modelagem de banco de dados do Mysql. Foi fundamental identificar corretamente as entidades, seus respectivos atributos e relacionamentos. Além da aprendizagem da (1ª, 2ª e 3ª) formas normais.
+Neste projeto, pude aprofundar meus conhecimentos em modelagem de banco de dados do Mysql. Foi fundamental identificar corretamente as entidades, seus respectivos atributos e relacionamentos. Além da aprendizagem da (1ª, 2ª e 3ª) formas normais, e da utilização do Joins para juntar certas entidades de tabelas diferentes.
 
 # Os desafios eram
 
