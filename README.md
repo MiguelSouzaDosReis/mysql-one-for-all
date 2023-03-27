@@ -1,6 +1,6 @@
 # Project Mysql One For All
 
-Nesse projeto eu aprofundei os meus conhecimentos de mysql e realizei os desafios propostos pela Trybe
+Neste projeto, pude aprender a utilizar o banco MySQL e solucionar os desafios propostos pela Trybe. Adquiri conhecimentos na criação, exclusão e atualização de tabelas, além da inserção, consultas e filtragem de dados.
 
 # Os desafios eram
 
